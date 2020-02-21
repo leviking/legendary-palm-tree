@@ -1,0 +1,1 @@
+UPDATE locations SET name='Joes Diner', phone='601-555-1234' WHERE name LIKE '%Little Joes%';
