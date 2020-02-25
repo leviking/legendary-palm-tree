@@ -1,0 +1,1 @@
+delete from locations where id=1;
