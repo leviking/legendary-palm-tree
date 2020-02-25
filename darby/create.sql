@@ -4,7 +4,8 @@ USE attendence;
 
 CREATE TABLE students(
     id INT NOT NULL auto_increment,
-    name VARCHAR(120) NOT NULL,
+    fname VARCHAR(120) NOT NULL,
+    lname VARCHAR(120) NOT NULL,
     email VARCHAR(120) NOT NULL,
     phone VARCHAR(10),
     github VARCHAR(120),
