@@ -1,0 +1,2 @@
+--read
+show databases;
