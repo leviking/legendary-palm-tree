@@ -12,5 +12,10 @@ CREATE TABLE player (
     dob date,
     classification varchar(2),
     PRIMARY KEY (id)
-)
+);
+
+INSERT INTO player (f_name, m_int, l_name, school_id, dob, classification) 
+    VALUES ('Rayne', 'D', 'Prescott', 1, '1993-07-29', 'SR');
+
+SELECT * FROM player;
 
