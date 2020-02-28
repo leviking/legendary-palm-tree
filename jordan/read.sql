@@ -1,2 +1,1 @@
-select * from meme;
-select * from gif;
+select * from meme where salt='tartarhar';

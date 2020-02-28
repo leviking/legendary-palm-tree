@@ -1,14 +1,36 @@
 -- create database
 create database lol;
+
 -- enter database and create tables
 use lol;
--- meme table
-create table meme (meme_name varchar(20) primary key, meme_creator varchar(20));
--- hashtag table
-create table hashtag (hashtag_name varchar(20));
--- working on setting hashtag as a foreign key from meme_name
--- insert values into meme
-insert into meme(meme_name, meme_creator) values ('minion', 'bob');
-insert into meme(meme_name, meme_creator) values ('tough', 'shane');
-insert into meme(meme_name, meme_creator) values ('weak', 'clam');
-insert into meme(meme_name, meme_creator) values ('class', 'dan');
+
+-- create meme table
+create table meme
+(id int AUTO_INCREMENT
+,creator_id int
+,PRIMARY KEY(id));
+
+-- create login
+create table user
+(id int AUTO_INCREMENT
+,user_name varchar(26)
+,password varchar(26)
+,email varchar(40)
+,primary key(id));
+
+-- insert values into user
+insert into user(user_name,password,email) values 
+('bob','bob1','notreal@email.com')
+;
+insert into user(user_name,password,email) values 
+('dan','dan1','notreal1@email.com')
+;
+insert into user(user_name,password,email) values 
+('shane','shane_steam','notreal2@email.com')
+;
+insert into user(user_name,password,email) values 
+('jay','not_jay','notreal3@email.com')
+;
+insert into user(user_name,password,email) values
+ ('fearblackscarab','notmypassword','fearblackscarab@notreal.com')
+ ;
