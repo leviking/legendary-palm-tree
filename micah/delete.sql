@@ -1,1 +1,8 @@
-delete from locations where id=1;
+-- Drop table locations
+
+DROP TABLE locations;
+
+
+-- Delete an entry from the locations table
+
+DELETE FROM locations WHERE id=1;
